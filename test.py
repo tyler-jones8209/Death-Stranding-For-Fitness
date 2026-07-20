@@ -70,13 +70,27 @@ def get_avail_preppers():
 avail_prep_paths = get_avail_preppers()
 
 random_location1 = business_list[random.randint(0, len(business_list) - 1)]
+random_location2 = business_list[random.randint(0, len(business_list) - 1)]
+
+while True:
+    if random_location2 == random_location1:
+        random_location2 = business_list[random.randint(0, len(business_list) - 1)]
+    break
 
 random_misc1 = misc_list[random.randint(0, len(misc_list) - 1)]
 
-random_prepper_path = avail_prep_paths[random.randint(0, len(avail_prep_paths) - 1)]
+random_prepper_path1 = avail_prep_paths[random.randint(0, len(avail_prep_paths) - 1)]
+random_prepper_path2 = avail_prep_paths[random.randint(0, len(avail_prep_paths) - 1)]
 
-random_prepper = Prepper.from_folder(random_prepper_path)
+random_prepper1 = Prepper.from_folder(random_prepper_path1)
+random_prepper2 = Prepper.from_folder(random_prepper_path2)
 
-random_order = orders.retrieve_order(prepper1=random_prepper.name, location1=random_location1, misc_location1=random_misc1)
+while True:
+    if random_prepper_path2 == random_prepper_path1:
+        random_prepper_path2 = avail_prep_paths[random.randint(0, len(avail_prep_paths) - 1)]
+        random_prepper2 = Prepper.from_folder(random_prepper_path2)
+    break
+
+random_order = orders.retrieve_order(prepper1=random_prepper1.name, prepper2=random_prepper2.name, location1=random_location1, location2=random_location2, misc_location1=random_misc1)
 
 print(random_order)
