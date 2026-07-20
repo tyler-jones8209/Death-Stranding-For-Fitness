@@ -4,6 +4,7 @@ import json
 from locations import business_list
 from locations import misc_list
 import random
+import orders
 
 
 @dataclass
@@ -68,18 +69,14 @@ def get_avail_preppers():
 
 avail_prep_paths = get_avail_preppers()
 
-random_prepper = avail_prep_paths[random.randint(0, len(avail_prep_paths) - 1)]
+random_location1 = business_list[random.randint(0, len(business_list) - 1)]
 
-print(random_prepper)
+random_misc1 = misc_list[random.randint(0, len(misc_list) - 1)]
 
+random_prepper_path = avail_prep_paths[random.randint(0, len(avail_prep_paths) - 1)]
 
-'''
-prepper_folder = Path("preppers/")
+random_prepper = Prepper.from_folder(random_prepper_path)
 
-for prepper_path in prepper_folder.iterdir():
-    if not any(Path(prepper_path).iterdir()):
-        continue
-    else:
-        prepper = Prepper.from_folder(prepper_path)
-        print(f"{prepper.name}: {prepper.role}")
-'''
+random_order = orders.retrieve_order(prepper1=random_prepper.name, location1=random_location1, misc_location1=random_misc1)
+
+print(random_order)
