@@ -1,7 +1,8 @@
 {
     "name": "The Craftsman",
     "game": "Death Stranding",
-    "location": "Craftsman",
+    "location": "Craftsman - S23-21",
+    "affiliation": "Preppers, UCA",
     "role": "Craftsman",
     "image": "face_facility_portrait.png"
 }

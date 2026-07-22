@@ -1,7 +1,8 @@
 {
-    "name": "Chiral Artist",
+    "name": "The Chiral Artist",
     "game": "Death Stranding",
-    "location": "Chiral Artist's Studio/Junk Dealer",
+    "location": "Junk Dealer - S37-65/ Chiral Artist's Mother (formerly) - S37-89",
+    "affiliation": "Prepper, UCA",
     "role": "Chiral Artist",
     "image": "face_facility_portrait.png"
 }

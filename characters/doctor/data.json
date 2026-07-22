@@ -1,7 +1,8 @@
 {
     "name": "The Doctor",
     "game": "Death Stranding",
-    "location": "Southwest of Mountain Knot City",
+    "location": "Southwest of Mountain Knot City - S41-07",
+    "affiliation": "Preppers, UCA",
     "role": "Doctor",
     "image": "face_facility_portrait.png"
 }

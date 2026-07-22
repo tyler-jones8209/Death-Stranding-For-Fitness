@@ -1,7 +1,8 @@
 {
     "name": "The Engineer",
     "game": "Death Stranding",
-    "location": "Southeast of Lake Knot City",
+    "location": "Southeast of Lake Knot City - S23-06",
+    "affiliation": "Preppers, UCA",
     "role": "Engineer",
     "image": "face_facility_portrait.png"
 }

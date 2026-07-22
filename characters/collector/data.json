@@ -1,7 +1,8 @@
 {
     "name": "The Collector",
     "game": "Death Stranding",
-    "location": "Collector",
+    "location": "Collector - S37-83",
+    "affiliation": "Prepper, UCA",
     "role": "Collector",
     "image": "face_facility_portrait.png"
 }
